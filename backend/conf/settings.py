@@ -42,9 +42,6 @@ INSTALLED_APPS = [
     # "admin_reorder",
 
     # user app
-    "blog.apps.BlogConfig",
-    "blog_2.apps.Blog2Config",
-    "blog_3.apps.Blog3Config",
 ]
 
 MIDDLEWARE = [
@@ -61,12 +58,6 @@ from django.contrib import admin
 from .admin import get_app_list
 
 admin.AdminSite.get_app_list = get_app_list
-
-# ADMIN_REORDER = (
-#     {'app': 'blog_2', 'label': 'Authorisation'},
-#     {'app': 'blog', 'label': 'Authorisation'},
-#     {'app': 'blog_3', 'label': 'Authorisation'},
-# )
 
 ROOT_URLCONF = "conf.urls"
 
